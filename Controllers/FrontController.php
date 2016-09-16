@@ -1,6 +1,6 @@
 <?php
 
-require '../Core/Components/Router.php';
+require '/../Core/Components/Router.php';
 
 class FrontController
 {
@@ -10,8 +10,14 @@ class FrontController
 
         $routeData = $router->run();
 
-        //...
-        // Создание контроллера и вызов у него действия
-    }
+        $controller = $routeData[0];
+        $action = $routeData[1];
 
+        $cont = __DIR__. '/' . $controller . '.php';
+
+        include $cont;
+
+        $objController = new $controller;
+        $objController->$action();
+    }
 }

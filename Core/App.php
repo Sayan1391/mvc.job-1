@@ -1,5 +1,6 @@
 <?php
 
+require __DIR__ . '/../Controllers/FrontController.php';
 /**
  * Created by PhpStorm.
  * User: Rabota
@@ -8,5 +9,10 @@
  */
 class App
 {
+    public static function run()
+    {
+        $FrontController = new FrontController();
+        $FrontController->init();
+    }
 
 }
