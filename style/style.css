@@ -1,0 +1,32 @@
+.news {
+    margin-bottom: 5px;
+    border: 1px solid black;
+    width: 400px;
+}
+
+.theme-box {
+    padding: 5px;
+    border-bottom: 1px solid black;
+}
+
+.news-box {
+    padding: 5px;
+}
+
+.status {
+    border-top: 1px solid black;
+    padding: 5px;
+}
+
+.create a {
+    text-decoration: none;
+}
+
+.create {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 20px;
+    width: 100px;
+    text-align: center;
+}

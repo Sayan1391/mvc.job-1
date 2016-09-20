@@ -1,7 +1,19 @@
 <?php
 
+/**
+ * Created by PhpStorm.
+ * @author Sayan
+ * Date: 20.09.2016
+ * Time: 18:56
+ * @package system
+ */
 class Router
 {
+    /**
+     * @author Sayan
+     * @return array
+     * Роутинг приложения
+     */
     public function run()
     {
         $url = $_SERVER['REQUEST_URI'];
